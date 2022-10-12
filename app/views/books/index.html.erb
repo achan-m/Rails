@@ -25,7 +25,7 @@
     </td>
 
     <td>
-     <a data-confirm="Are you sure?" class="destroy_id" rel="nofollow" data-method="delete" href="/books/id">Destroy</a>
+     <%= link_to "Destroy", book_path(book.id), method: :delete, "data-confirm" => "Are you sure?" %>
     </td>
 
   </tbody>

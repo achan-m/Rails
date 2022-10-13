@@ -1,6 +1,6 @@
-<div>
+<div class="text-success">
   <%=flash[:notice]%>
-<div>
+</div>
 
 <h1>Books</h1>
 
@@ -42,14 +42,15 @@
   <% end %>
 
     <%= form_with model: @book do |f| %>
-      <p>Title</p>
+      <div class=box-item>Title</div>
        <%= f.text_field :title %>
 
-      <p>Body</p>
+      <div class=box-item>Body</div>
        <%= f.text_area :body %>
        <br>
        <%= f.submit 'Create Book' %>
     <% end %>
 
   </body>
+
 </html>
